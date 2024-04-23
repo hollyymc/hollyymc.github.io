@@ -7,6 +7,7 @@ html, body {
     height: 100%;
     background-color: #fafafa;
 }
+
 .header {
     text-align: center;
     height: 100%;
@@ -15,37 +16,44 @@ html, body {
 }
 .header-block {
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 480px;
     margin: 0 auto;
 }
+
+.central_image, .image1 , .image2, .image3, .social_media{
+    position: absolute;
+}
+
+.central_image {
+    left: 0;
+}
+.space_image img {
+    width: 30%
+}
+.space_image img:hover {
+    opacity: 0.7;
+}
+.image1 { /* moon */
+    left: 115%;
+    top: 30%;
+}
+.image2 { /* satellite */
+    right: 120%; /* Adjust this value as needed */
+    top: 200px;
+}
+.image3 {
+    right: 100%; /* Adjust this value as needed */
+    top: -100px;
+}
+
 .header-block h1 {
-    font-size: 62px;
-    font-family: Raleway;
+    font-size: 30px;
+    font-family: Consolas, monaco, monospace;
     letter-spacing: 1px;
-    font-weight: 100;
-}
-.header-block .nav {
-    margin-top: 10px;
-}
-.header-block .nav .nav-item{
-    font-size: 22px;
-    color: #555;
-    letter-spacing: 2px;
-    font-family: Open Sans, sans-serif;
-    font-weight: 100;
-    text-transform: uppercase;
-    padding: 0 10px;
-    border-right: 1px solid #666;
-    text-decoration: none;
-}
-.header-block .nav .nav-item:hover{
-    color: #999;
-}
-.header-block .nav .nav-item:last-child{
-    border-right: none;
+    font-weight: 1000;
 }
 
 img {
@@ -53,15 +61,15 @@ img {
     height: auto; /* Maintain aspect ratio */
 }
 
-.social-media {
-    margin-top: 15px;
+.social_media {
+    top: 350px
 }
-.social-media-item img {
-    width: 30px;
-    height: 30px;
+.social_media_item img {
+    width: 10%;
+    height: 10%;
     margin: 0 10px;
 }
-.social-media-item:hover img {
+.social_media_item:hover img {
     opacity: 0.7;
 }
 .footer {
@@ -71,15 +79,7 @@ img {
     transform: translateX(-50%);
     font-size: 10pt;
 }
-.extras-icon {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 25px;
-    height: 25px;
-    background: url("images/icons/bw/extras.png");
-    background-size: cover;
-}
+
 
 
 @media (max-width: 500px) {
@@ -89,18 +89,23 @@ img {
     .header-block h1 {
         font-size: 44px;
     }
-    .header-block .nav .nav-item {
-        font-size: 18px;
-    }
     .social-media-item img {
         margin: 0 3px;
     }
 
 }
 
-.fixed-image {
+.fixed_image {
     position: fixed;
     top: 10px; /* Adjust the distance from the top */
     right: 10px; /* Adjust the distance from the right */
     z-index: 999; /* Ensure the image stays above other content */
+}
+
+.image_container {
+    text-align: justify;
+}
+.image_container img {
+    display: block;
+    margin: 0 auto;
 }
