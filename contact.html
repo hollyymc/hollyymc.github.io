@@ -7,12 +7,30 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Education</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="h1-container white">
-    <h1>UNDER CONSTRUCTION</h1>
-</div>
+    <div class="nav-container">
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="cv.html">CV</a>
+            <a class="active" href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <div class="feedback-card">
+        <div class="feedback-header">SAY HI</div>
+        <form class="feedback-body" action="send_feedback.php" method="post">
+            <input class="feedback-body__email" placeholder="Email" type="email" required>
+            <input class="feedback-body__name" name="name" placeholder="Name" type="text">
+            <textarea class="feedback-body__message" placeholder="Message"></textarea>
+            <button class="feedback-body__submit">SEND</button>
+        </form>
+    </div>
+
+
 
 </body>
 </html>
