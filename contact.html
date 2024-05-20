@@ -20,17 +20,24 @@
         </div>
     </div>
 
-    <div class="feedback-card">
-        <div class="feedback-header">SAY HI</div>
-        <form class="feedback-body" action="send_feedback.php" method="post">
-            <input class="feedback-body__email" placeholder="Email" type="email" required>
-            <input class="feedback-body__name" name="name" placeholder="Name" type="text">
-            <textarea class="feedback-body__message" placeholder="Message"></textarea>
-            <button class="feedback-body__submit">SEND</button>
-        </form>
+    <form id="fs-frm" accept-charset="utf-8" action="https://formspree.io/f/mwkgjppj" method="post">
+        <fieldset id="fs-frm-inputs">
+            <label for="full-name">Say Hi</label>
+            <input type="text" name="name" id="full-name" placeholder="Name" required="">
+            <input type="email" name="_replyto" id="email-address" placeholder="Email" required="">
+            <textarea rows="10" name="message" id="message" placeholder="Message" required=""></textarea>
+            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+        </fieldset>
+        <input type="submit" value="Submit" class="submit-button" role="button">
+    </form>
+
+    <div class="footer">
+        <a href="index.html">linkedin</a>
+        <a href="projects.html">email</a>
+        <a href="cv.html">codepen</a>
+        <a href="contact.html">github</a>
+        <a href="contact.html">behance</a>
     </div>
-
-
 
 </body>
 </html>
