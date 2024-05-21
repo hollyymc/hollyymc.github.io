@@ -78,7 +78,7 @@ a {
     font-size: 1.5vw;
 }
 
-a:hover {
+.socials-container > a:hover {
     color: rgba(255, 255, 255, 0.53);
 }
 
@@ -114,13 +114,13 @@ a:hover {
     margin-top: 2%;
 }
 
-.footer {
+/*.footer {
     text-align: center;
     width: 100%;
     color: rgb(255, 255, 255);
     position: absolute;
     bottom: 0;
-}
+}*/
 
 /*SCROLLING TEXT*/
 #maindiv{
@@ -242,6 +242,10 @@ a:hover {
     -webkit-text-decoration-style: wavy;
 }
 
+.topnav a.active > .topnav a:hover {
+    color: rgba(255, 255, 255, 0.53);
+}
+
 /*CONTACT FORM*/
 form {
     width: 35vw;
@@ -320,3 +324,66 @@ label {
         padding: 0 25px;
     }
 }
+
+/*contact socials*/
+.footer{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: #e0ecfb;
+}
+
+.holder {
+    height:80px;
+    width:80px;
+    text-align:center;
+    padding:15px 4px 4px 4px;
+    /*box-shadow:0 0 20px #aaa;*/
+    margin:10px;
+    border-radius:8px;
+}
+i{
+    font-size: 0.75vw;
+}
+#title{
+    display:block;
+    color:#bbb;
+    text-shadow:1px 1px 0 #111;
+    background:#e8e8e8;
+    box-shadow:0 0 10px #444;
+    height:auto;
+    width:100%;
+    top:0;
+    text-align:center;
+    font-weight:300;
+    font-size:40px;
+    position:fixed;
+}
+.codepen:hover{
+    /*background:#3d3d3d;
+    color:#fff;*/
+    color: #5b5b5b;
+}
+.dribbble:hover{
+    /*background:#186668;
+    color:#fff;*/
+    color: #ea4c89;
+}
+.github:hover{
+    /*background:#767676;
+    color:#fff;*/
+    color: #7d59ad;
+}
+.linkedin:hover{
+    /*background:#336699;
+    color:#fff;*/
+    color: #3571c0;
+}
+.behance:hover{
+    /*background:#859891;
+    color:#fff;*/
+    color: #75a89b;
+}
+
